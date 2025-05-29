@@ -15,9 +15,6 @@ RUN npm install --os=linux --cpu=x64 sharp
 # Copy the rest of the application code
 COPY . .
 
-# Generate Prisma Client
-RUN npx prisma generate
-
 # Build the NestJS application
 RUN npm run build
 
